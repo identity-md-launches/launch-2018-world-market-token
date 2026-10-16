@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "WorldMarketToken",
+    "name": "World Market Token",
+    "symbol": "WORLD",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0xce34a5ae98f51b499b92063a7a83d49b26ee5b14"
+  },
+  "notes": "WorldMarketToken is a fixed-supply ERC-20 with 18 decimals. Its parameterless constructor mints 1,000,000,000 WORLD once to msg.sender, the factory during launch. Transfers use standard ERC-20 behavior with no fees. There are no administrative powers or externally callable mint or burn functions. No application contracts are deployed. pool.initialPrice records provenance only; the deployer derives the opening price from economics.initialMarketCapWei and token.totalSupply."
+}
